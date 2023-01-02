@@ -12,7 +12,7 @@ public class Test {
     public int paros(int[] tomb){
         int count = 0;
         for (var i:tomb) {
-            if (i / 2 == 0){
+            if (i % 2 == 0){
                 count++;
             }
         }
@@ -38,6 +38,18 @@ public class Test {
         }
         return count;
     }
+
+    public static int sumOfParatlan(int[] tomb){
+        int sum = 0;
+        for (var i:tomb) {
+            if (i % 2 == 1){
+                sum+= i;
+            }
+        }
+        return sum;
+    }
+
+
     public static void main(String[] args){
         int[] tomb = new int[20];
 
