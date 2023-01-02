@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Test {
 
     public int minimum(int[] tomb){
@@ -49,6 +51,16 @@ public class Test {
         return sum;
     }
 
+    public static int sumOfParos(int[] tomb){
+        int sum = 0;
+        for (int i = 0; i < tomb.length; i++) {
+            if (tomb[i] % 2 == 0){
+                sum += tomb[i];
+            }
+        }
+        return sum;
+    }
+
 
     public static void main(String[] args){
         int[] tomb = new int[20];
@@ -56,6 +68,5 @@ public class Test {
         for (int i = 0; i < tomb.length; i++) {
             tomb[i] = (int)(Math.random() * (100 - 1) + 1);
         }
-        System.out.println(paratlan(tomb));
     }
 }
