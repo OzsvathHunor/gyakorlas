@@ -24,4 +24,4 @@ hs_err_pid*
 
 # feladatban kert ignore-ok
 /.idea
-/.out
+/out
