@@ -9,6 +9,15 @@ public class Test {
         }
         return min;
     }
+    public int paros(int[] tomb){
+        int count = 0;
+        for (var i:tomb) {
+            if (i / 2 == 0){
+                count++;
+            }
+        }
+        return count;
+    }
     public static void main(String[] args){
         int[] tomb = new int[20];
 
