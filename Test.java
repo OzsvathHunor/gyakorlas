@@ -18,6 +18,16 @@ public class Test {
         }
         return count;
     }
+
+    public static int max (int[] tomb){
+        int max = 0;
+        for (int i = 0; i < tomb.length; i++) {
+            if (tomb[i] > max){
+                max = tomb[i];
+            }
+        }
+        return max;
+    }
     public static void main(String[] args){
         int[] tomb = new int[20];
 
